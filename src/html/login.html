@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="h-screen w-screen bg-cover bg-center bg-no-repeat" style="background-image: url('https://www.splcenter.org/sites/default/files/web_vote_your_voice_main_hero_1800x1012.png');">
+  <!-- Overlay -->
+  <div class="h-full w-full bg-black bg-opacity-30 flex items-center justify-center">
+    <div class="bg-zinc-900 bg-opacity-90 text-gray-300 p-10 rounded-xl shadow-xl w-full max-w-[500px]">
+      <h1 class="text-3xl font-semibold mb-2 text-center">Decentralized Voting System</h1>
+      <p class="text-center text-sm mb-6 text-gray-300">Using Ethereum Blockchain</p>
+      <h2 class="text-2xl font-medium mb-6 text-center">Voter Login</h2>
+      <form id="loginForm" class="space-y-5">
+        <div>
+          <label for="voter-id" class="block text-sm font-medium text-gray-200 mb-3">Voter ID</label>
+          <input type="text" id="voter-id" name="voter-id" placeholder="Voter ID" class="w-full p-3 rounded-md bg-zinc-800 text-white placeholder-gray-400" />
+        </div>
+        <div>
+          <label for="password" class="block text-sm font-medium text-gray-200 mb-3">Password</label>
+          <input type="password" id="password" name="password" placeholder="Password" class="w-full p-3 rounded-md bg-zinc-800 text-white placeholder-gray-400" />
+        </div>
+        <button type="submit" class="w-full py-3 bg-teal-500 text-white font-semibold rounded-md hover:bg-teal-600 transition duration-300">
+          Login
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="../js/login.js" type="module"></script>
+</body>
+
+</html>

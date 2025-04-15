@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Admin Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-zinc-900 text-zinc-200 min-h-screen flex flex-col items-center p-6 px-80">
+    <h1 class="text-3xl font-bold mt-10 text-center">
+      Decentralized Voting Using Ethereum Blockchain
+    </h1>
+
+    <!-- Admin Overview Section
+    <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+      <div class="bg-zinc-800 p-6 rounded-lg shadow-lg">
+        <h2 class="text-xl font-semibold border-b border-gray-600 pb-2 mb-6">Total Candidates</h2>
+        <p class="text-4xl font-bold text-center text-blue-500">42</p>
+      </div>
+      <div class="bg-zinc-800 p-6 rounded-lg shadow-lg">
+        <h2 class="text-xl font-semibold border-b border-gray-600 pb-2 mb-6">Active Voters</h2>
+        <p class="text-4xl font-bold text-center text-blue-500">157</p>
+      </div>
+      <div class="bg-zinc-800 p-6 rounded-lg shadow-lg">
+        <h2 class="text-xl font-semibold border-b border-gray-600 pb-2 mb-6">Pending Tasks</h2>
+        <p class="text-4xl font-bold text-center text-blue-500">8</p>
+      </div>
+    </div> -->
+
+    <!-- Add Candidate Section -->
+    <div class="bg-zinc-800 p-8 mt-10 rounded-lg shadow-lg w-full">
+      <h2 class="text-xl font-semibold border-b border-gray-600 pb-2 mb-6">Add Candidate</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <label for="name" class="block text-sm font-medium mb-1">Name</label>
+          <input
+            id="name"
+            type="text"
+            placeholder="Candidate's name"
+            autocomplete="off"
+            class="w-full px-4 py-2 rounded bg-gray-700 border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+        </div>
+        <div>
+          <label for="party" class="block text-sm font-medium mb-1">Party</label>
+          <input
+            id="party"
+            type="text"
+            placeholder="Candidate's party"
+            class="w-full px-4 py-2 rounded bg-gray-700 border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+        </div>
+      </div>
+      <button
+        id="addCandidate"
+        class="mt-6 w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition"
+      >
+        Add Candidate
+      </button>
+      <p id="Aday" class="mt-4 text-sm text-gray-400"></p>
+    </div>
+
+    <!-- Define Voting Dates Section -->
+    <div class="bg-zinc-800 p-8 mt-8 rounded-lg shadow-lg w-full">
+      <h2 class="text-xl font-semibold border-b border-gray-600 pb-2 mb-6">Define Voting Dates</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <label for="startDate" class="block text-sm font-medium mb-1">Start Date</label>
+          <input
+            id="startDate"
+            type="date"
+            class="w-full px-4 py-2 rounded bg-gray-700 border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+        </div>
+        <div>
+          <label for="endDate" class="block text-sm font-medium mb-1">End Date</label>
+          <input
+            id="endDate"
+            type="date"
+            class="w-full px-4 py-2 rounded bg-gray-700 border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+        </div>
+      </div>
+      <button
+        id="addDate"
+        class="mt-6 w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition"
+      >
+        Define Dates
+      </button>
+      <p id="Aday" class="mt-4 text-sm text-gray-400"></p>
+    </div>
+
+    <!-- Recent Activities Section -->
+    <div class="bg-zinc-800 p-6 mt-10 rounded-lg shadow-lg w-full">
+      <h2 class="text-xl font-semibold border-b border-gray-600 pb-2 mb-6">Recent Activities</h2>
+      <ul class="space-y-4">
+        <li class="text-sm text-gray-400">Candidate John Doe added to the list.</li>
+        <li class="text-sm text-gray-400">Voting period for candidate Jane Smith defined.</li>
+        <li class="text-sm text-gray-400">New party registered for the voting system.</li>
+        <li class="text-sm text-gray-400">System update: Blockchain integration successful.</li>
+      </ul>
+    </div>
+
+    <!-- Account Info Section -->
+    <div id="accountAddress" class="mt-6 text-sm text-gray-400 text-center w-full">
+      <p>Account Address: 0xB2d7b2B31a6b7E3cD55C9189879DB7b2A74c935</p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="../dist/app.bundle.js" type="module"></script>
+  </body>
+</html>
