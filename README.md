@@ -59,9 +59,7 @@
 
 9. Install Truffle globally:
        
-       ```shell
        npm install -g truffle
-       ```
 
 10. Navigate to the root directory of the cloned project and install Node.js dependencies:
        
