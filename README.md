@@ -38,10 +38,12 @@
 5. Create a new wallet in MetaMask (if you don’t have one), then import accounts from Ganache using the private keys.
 
 6. Add a new custom network in MetaMask with the following details:
-- Network Name: Localhost 7575
-- RPC URL: http://localhost:7545
-- Chain ID: 1337
-- Currency Symbol: ETH
+       
+       Network Name: Localhost 7575
+       RPC URL: http://localhost:7545
+       Chain ID: 1337
+       Currency Symbol: ETH
+
 
 7. Open XAMPP and start MySQL. Create a new database named `voter_db`.
 
