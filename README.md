@@ -58,19 +58,22 @@
    Add some sample records manually for testing.
 
 9. Install Truffle globally:
-
+       
+       ```shell
        npm install -g truffle
-
+       ```
 
 10. Navigate to the root directory of the cloned project and install Node.js dependencies:
-
+       
+       ```shell
        npm install
-
+       ```
 
 11. Install required Python packages:
-
+       
+       ```shell
        pip install fastapi mysql-connector-python pydantic python-dotenv uvicorn uvicorn[standard] PyJWT
-
+       ```
 
 
 ## 💻 Usage
