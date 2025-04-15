@@ -61,9 +61,11 @@
 
        npm install -g truffle
 
+
 10. Navigate to the root directory of the cloned project and install Node.js dependencies:
 
        npm install
+
 
 11. Install required Python packages:
 
